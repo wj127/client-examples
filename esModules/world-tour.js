@@ -5,8 +5,10 @@ const createScene = () => {
   const scene = new Scene();
   const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   const renderer = new WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  document.getElementById('sceneContainer').appendChild(renderer.domElement);
+  const wrapperNode = document.getElementById('sceneContainer');
+  // renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(wrapperNode.offsetWidth, window.innerHeight / 2);
+  wrapperNode.appendChild(renderer.domElement);
 
   const geometry = new BoxGeometry();
   const material = new MeshBasicMaterial({ color: 0x00ff00, border: 0x000000 });
