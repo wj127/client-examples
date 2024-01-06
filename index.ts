@@ -6,7 +6,7 @@ const server = Bun.serve({
     const url = new URL(req.url);
 
     if (url.pathname === "/")
-      res = new Response(Bun.file("./esModules/index.html"));
+      res = new Response(Bun.file("./esModules/example01/index.html"));
     else
       res = new Response(Bun.file(`.${url.pathname}`));
     res.headers.set('Access-Control-Allow-Origin', '*');
