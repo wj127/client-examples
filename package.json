@@ -1,14 +1,36 @@
 {
   "name": "examples",
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-    "scripts": {
-       "start": "npx serve --cors"
-    }
+  "scripts": {
+    "esModules": "clear && bun index.ts",
+    "start": "react-scripts start"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/three": "^0.160.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.160.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

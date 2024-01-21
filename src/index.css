@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+#main-wrapper, #root {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  border: 1px solid #f5f5f5;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+#sceneContainer {
+  width: 60%;
+  height: 60%;
+}

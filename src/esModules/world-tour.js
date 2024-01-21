@@ -1,5 +1,7 @@
 import { Scene, PerspectiveCamera, WebGLRenderer, BoxGeometry, MeshBasicMaterial, Mesh, DirectionalLight } from 'https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.module.js';
 
+console.log('Loaded!');
+
 export const createScene = () => {
   // Create scene, camera, and renderer here
   const scene = new Scene();
@@ -20,8 +22,6 @@ export const createScene = () => {
   scene.add(light);
 
   camera.position.z = 5;
-
-  // Add your 3D objects here
 
   // Render loop
   function animate() {

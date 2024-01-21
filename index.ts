@@ -5,8 +5,9 @@ const server = Bun.serve({
     let res: Response;
     const url = new URL(req.url);
 
+    console.log(`Request: ${url.pathname}`);
     if (url.pathname === "/")
-      res = new Response(Bun.file("./esModules/example01/index.html"));
+      res = new Response(Bun.file("./src/esModules/example01/static.html"));
     else
       res = new Response(Bun.file(`.${url.pathname}`));
     res.headers.set('Access-Control-Allow-Origin', '*');

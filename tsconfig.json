@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ESNext"
+    ],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "bundler",
@@ -18,5 +22,12 @@
     "types": [
       "bun-types" // add Bun global
     ]
-  }
+  },
+  "rules": {
+    "no-unused-vars": "on",
+    "@typescript-eslint/no-unused-vars": "on",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "on",
+    "@typescript-eslint/no-unused-imports": "error",
+  },
 }

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Examples | ESModules</title>
-    <link href="http://localhost:3000/esModules/common-styles.css" rel="stylesheet">
+    <link href="http://localhost:3000/src/index.css" rel="stylesheet">
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script type="module" src="http://localhost:3000/esModules/world-tour.js" crossorigin></script>
+    <!-- Here we load the heavy module at the very beginning -->
+    <script type="module" src="http://localhost:3000/src/esModules/world-tour.js" crossorigin></script>
 </head>
 <body>
     <div id="main-wrapper">
